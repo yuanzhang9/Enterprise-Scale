@@ -1617,7 +1617,7 @@
                             "toolTip": "Select the target region for you connectivity deployment (requires you to provide a subscriptionId for connectivity)",
                             "defaultValue": "[steps('basics').resourceScope.location.displayName]",
                             "constraints": {
-                                "allowedValues": "[map(filter(steps('basics').getLocations.value,(item) => equals(item.metadata.regionType, 'Physical')),(item) => parse(concat('{\"label\":\"',item.displayName,'\",\"value\":\"',item.name,'\"}')))]",
+                                "allowedValues": "[map(steps('basics').getLocations.value,(item) => parse(concat('{\"label\":\"',item.displayName,'\",\"value\":\"',item.name,'\"}')))]",
                                 "required": true
                             },
                             "visible": "[not(equals(steps('connectivity').enableHub, 'No'))]"
