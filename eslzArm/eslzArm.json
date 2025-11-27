@@ -2384,7 +2384,7 @@
                         "value": "[parameters('monitorAlertsResourceGroup')]"
                     },
                     "ALZMonitorResourceGroupLocation": {
-                        "value": "[deployment().location]"
+                        "value": "[parameters('connectivityLocation')]"
                     },
                     "ALZMonitorActionGroupEmail": {
                         "value": "[if(empty(parameters('ambaAgEmailContact')), null(), array(parameters('ambaAgEmailContact')))]"
@@ -2487,7 +2487,7 @@
                         "value": "[parameters('monitorAlertsResourceGroup')]"
                     },
                     "ALZMonitorResourceGroupLocation": {
-                        "value": "[deployment().location]"
+                        "value": "[parameters('connectivityLocation')]"
                     },
                     "ALZMonitorActionGroupEmail": {
                         "value": "[if(empty(parameters('ambaAgEmailContact')), null(), array(parameters('ambaAgEmailContact')))]"
@@ -2704,7 +2704,7 @@
                         "value": "[variables('platformResourceNames').logAnalyticsWorkspace]"
                     },
                     "workspaceRegion": {
-                        "value": "[deployment().location]"
+                        "value": "[parameters('connectivityLocation')]"
                     },
                     "retentionInDays": {
                         "value": "[parameters('retentionInDays')]"
@@ -2734,7 +2734,7 @@
                         "value": "[variables('platformResourceIds').logAnalyticsResourceId]"
                     },
                     "WorkspaceLocation": {
-                        "value": "[deployment().location]"
+                        "value": "[parameters('connectivityLocation')]"
                     },
                     "userGivenDcrName": {
                         "value": "[variables('platformResourceNames').dataCollectionRuleVmInsights]"
@@ -2764,7 +2764,7 @@
                         "value": "[variables('platformResourceIds').logAnalyticsResourceId]"
                     },
                     "WorkspaceLocation": {
-                        "value": "[deployment().location]"
+                        "value": "[parameters('connectivityLocation')]"
                     },
                     "dataCollectionRuleName": {
                         "value": "[variables('platformResourceNames').dataCollectionRuleChangeTracking]"
@@ -2794,7 +2794,7 @@
                         "value": "[variables('platformResourceIds').logAnalyticsResourceId]"
                     },
                     "WorkspaceLocation": {
-                        "value": "[deployment().location]"
+                        "value": "[parameters('connectivityLocation')]"
                     },
                     "userGivenDcrName": {
                         "value": "[variables('platformResourceNames').dataCollectionRuleMdfcDefenderSql]"
@@ -2937,7 +2937,7 @@
                 },
                 "parameters": {
                     "resourceGroupLocation": {
-                        "value": "[deployment().location]"
+                        "value": "[parameters('connectivityLocation')]"
                     },
                     "topLevelManagementGroupPrefix": {
                         "value": "[parameters('enterpriseScaleCompanyPrefix')]"
@@ -6645,7 +6645,7 @@
                         "value": "[if(equals(parameters('enableVmMonitoring'), 'Yes'), 'Default', 'DoNotEnforce')]"
                     },
                     "workspaceRegion": {
-                        "value": "[deployment().location]"
+                        "value": "[parameters('connectivityLocation')]"
                     },
                     "userWorkspaceResourceId": {
                         "value": "[variables('platformResourceIds').logAnalyticsResourceId]"
@@ -6694,7 +6694,7 @@
                         "value": "[if(equals(parameters('enableVmMonitoring'), 'Yes'), 'Default', 'DoNotEnforce')]"
                     },
                     "workspaceRegion": {
-                        "value": "[deployment().location]"
+                        "value": "[parameters('connectivityLocation')]"
                     },
                     "userWorkspaceResourceId": {
                         "value": "[variables('platformResourceIds').logAnalyticsResourceId]"
@@ -8160,7 +8160,7 @@
                         "value": "[variables('platformResourceNames').logAnalyticsWorkspace]"
                     },
                     "workspaceRegion": {
-                        "value": "[deployment().location]"
+                        "value": "[parameters('connectivityLocation')]"
                     },
                     "retentionInDays": {
                         "value": "[parameters('retentionInDays')]"
@@ -8190,7 +8190,7 @@
                 },
                 "parameters": {
                     "location": {
-                        "value": "[deployment().location]"
+                        "value": "[parameters('connectivityLocation')]"
                     },
                     "userAssignedIdentityName": {
                         "value": "[variables('platformResourceNames').userAssignedIdentity]"
@@ -9131,7 +9131,7 @@
                         "value": "[variables('platformResourceIds').logAnalyticsResourceId]"
                     },
                     "WorkspaceLocation": {
-                        "value": "[deployment().location]"
+                        "value": "[parameters('connectivityLocation')]"
                     },
                     "userGivenDcrName": {
                         "value": "[variables('platformResourceNames').dataCollectionRuleVmInsights]"
@@ -9164,7 +9164,7 @@
                         "value": "[variables('platformResourceIds').logAnalyticsResourceId]"
                     },
                     "WorkspaceLocation": {
-                        "value": "[deployment().location]"
+                        "value": "[parameters('connectivityLocation')]"
                     },
                     "dataCollectionRuleName": {
                         "value": "[variables('platformResourceNames').dataCollectionRuleChangeTracking]"
@@ -9197,7 +9197,7 @@
                         "value": "[variables('platformResourceIds').logAnalyticsResourceId]"
                     },
                     "WorkspaceLocation": {
-                        "value": "[deployment().location]"
+                        "value": "[parameters('connectivityLocation')]"
                     },
                     "userGivenDcrName": {
                         "value": "[variables('platformResourceNames').dataCollectionRuleMdfcDefenderSql]"
