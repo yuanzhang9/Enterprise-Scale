@@ -108,7 +108,9 @@
             "chinaeast2": "sha2",
             "chinaeast3": "sha3",
             "germanycentral": "gec",
-            "germanynortheast": "gne"
+            "germanynortheast": "gne",
+            "taiwannorth": "twn",
+            "taiwannorthwest": "twnw"
         },
         "baseId": "[concat(parameters('dnsZoneResourceGroupId'), '/providers/Microsoft.Network/privateDnsZones/')]",
         "policyParameterMapping": {
@@ -162,7 +164,7 @@
             "azureAcrPrivateDnsZoneId": "[concat(variables('baseId'), 'privatelink.azurecr.io')]",
             "azureEventHubNamespacePrivateDnsZoneId": "[concat(variables('baseId'), 'privatelink.servicebus.windows.net')]",
             "azureMachineLearningWorkspacePrivateDnsZoneId": "[concat(variables('baseId'), 'privatelink.api.azureml.ms')]",
-            "azureMachineLearningWorkspaceSecondPrivateDnsZoneId" : "[concat(variables('baseId'), 'privatelink.notebooks.azure.net')]",
+            "azureMachineLearningWorkspaceSecondPrivateDnsZoneId": "[concat(variables('baseId'), 'privatelink.notebooks.azure.net')]",
             "azureServiceBusNamespacePrivateDnsZoneId": "[concat(variables('baseId'), 'privatelink.servicebus.windows.net')]",
             "azureCognitiveSearchPrivateDnsZoneId": "[concat(variables('baseId'), 'privatelink.search.windows.net')]",
             "azureBotServicePrivateDnsZoneId": "[concat(variables('baseId'), 'privatelink.directline.botframework.com')]",
