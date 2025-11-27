@@ -10095,7 +10095,7 @@
                 "regCompPolParSoc2Type2MaxMemoryBytes": "[coalesce(steps('regulatory').regPolicyParamSoc2Type2.regCompPolParSoc2Type2MaxMemoryBytes, '')]"
             },
             "kind": "Tenant",
-            "location": "[steps('basics').resourceScope.location.name]"
+            "location": "[steps('connectivity').connectivityLocation]"
         }
     }
 }
