@@ -1863,7 +1863,7 @@
             "denyActionDeleteUAMIAMAPolicyAssignment": "[uri(deployment().properties.templateLink.uri, 'managementGroupTemplates/policyAssignments/DENYACTION-DeleteUAMIAMAPolicyAssignment.json')]"
         },
         // Declaring deterministic deployment names
-        "deploymentSuffix": "[concat('-', deployment().location, '-', guid(parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow')))]",
+        "deploymentSuffix": "[concat('-', parameters('connectivityLocation'), '-', guid(parameters('enterpriseScaleCompanyPrefix'), parameters('currentDateTimeUtcNow')))]",
         "deploymentNames": {
             "mgmtGroupDeploymentName": "[take(concat('alz-Mgs', variables('deploymentSuffix')), 64)]",
             "secSubscriptionPlacement": "[take(concat('alz-SecSub', variables('deploymentSuffix')), 64)]",
