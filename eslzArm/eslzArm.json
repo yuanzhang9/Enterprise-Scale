@@ -2048,7 +2048,7 @@
         },
         // Declaring deterministic names for Resource Groups that will be created for platform resources
         "platformRgNames": {
-            "mgmtRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-mgmt', parameters('connectivityLocation'))]",
+            "mgmtRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-mgmt-', parameters('connectivityLocation'))]",
             "connectivityRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnethub-', parameters('connectivityLocation'))]",
             "connectivityRgSecondary": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnethub-', parameters('connectivityLocationSecondary'))]",
             "ddosRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-ddos')]",
