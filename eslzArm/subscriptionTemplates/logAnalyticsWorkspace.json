@@ -23,7 +23,7 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "name": "[parameters('rgName')]",
-            "location": "[deployment().location]",
+            "location": "[parameters('workspaceRegion')]",
             "properties": {}
         },
         {
